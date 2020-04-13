@@ -17,3 +17,15 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+import getEnv from './lib/common/utils/env';
+
+export default {
+    port: getEnv('{appname}_PORT') || 21100,
+
+    slack_token: getEnv('{appname}_SLACK_TOKEN'),
+    slack_signing_secret: getEnv('{appname}_SLACK_SIGNING_SECRET'),
+
+    web_id: getEnv('{appname}_WEB_ID') || 'master',
+    web_pw: getEnv('{appname}_WEB_PW') || '1234',
+};
+
