@@ -1,2 +1,2 @@
 # LMS
-학습지원시스템(LMS) 지원시스템
+LMS Management System
