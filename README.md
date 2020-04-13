@@ -1,2 +1,2 @@
-# LMS
-LMS Management System
+# Node.js Template
+A template repository for Node.js app.
