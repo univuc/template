@@ -1,14 +1,14 @@
 {
-  "name": "lms",
+  "name": "{appname}",
   "version": "1.0.0",
-  "description": "LMS management system",
+  "description": "{description}",
   "main": "index.mjs",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/INU-manager/LMS.git"
+    "url": "git+https://github.com/univuc/{appname}.git"
   },
   "keywords": [
     "lms"
@@ -16,11 +16,13 @@
   "author": "potados99",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/INU-manager/LMS/issues"
+    "url": "https://github.com/univuc/{appname}/issues"
   },
-  "homepage": "https://github.com/INU-manager/LMS#readme",
+  "homepage": "https://github.com/univuc/{appname}#readme",
   "dependencies": {
-    "esm": "^3.2.25"
+    "@hapi/hapi": "^19.1.1",
+    "esm": "^3.2.25",
+    "redis": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -53,11 +55,6 @@
     "moduleFileExtensions": [
       "js",
       "mjs"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "statements": 70
-      }
-    }
+    ]
   }
 }
