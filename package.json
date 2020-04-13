@@ -1,0 +1,63 @@
+{
+  "name": "lms",
+  "version": "1.0.0",
+  "description": "LMS management system",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INU-manager/LMS.git"
+  },
+  "keywords": [
+    "lms"
+  ],
+  "author": "potados99",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/INU-manager/LMS/issues"
+  },
+  "homepage": "https://github.com/INU-manager/LMS#readme",
+  "dependencies": {
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "eslint": "^6.8.0",
+    "babel-eslint": "^10.1.0",
+    "jest": "^25.3.0",
+    "babel-jest": "^25.3.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.?(m)js?(x)",
+      "**/?(*.)(spec|test).?(m)js?(x)"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{mjs,js,}",
+      "!index.mjs",
+      "!config.mjs",
+      "!test/**",
+      "!**/node_modules/**",
+      "!**/coverage/**"
+    ],
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.m?js$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "./node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "mjs"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 70
+      }
+    }
+  }
+}
