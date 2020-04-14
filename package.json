@@ -12,7 +12,7 @@
     "url": "git+https://github.com/univuc/{appname}.git"
   },
   "keywords": [
-    "lms"
+    "{appname}"
   ],
   "author": "potados99",
   "license": "GPL-3.0-or-later",
