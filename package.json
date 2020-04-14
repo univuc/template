@@ -1,9 +1,10 @@
 {
-  "name": "{appname}",
+  "name": "appname",
   "version": "1.0.0",
   "description": "{description}",
   "main": "index.mjs",
   "scripts": {
+    "start": "node -r esm index.mjs",
     "test": "jest"
   },
   "repository": {
@@ -25,6 +26,7 @@
     "@hapi/hapi": "^19.1.1",
     "@hapi/inert": "^6.0.1",
     "@slack/web-api": "^5.8.0",
+    "crypto": "^1.0.1",
     "esm": "^3.2.25",
     "minimist": "latest",
     "redis": "^3.0.2",

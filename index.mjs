@@ -17,3 +17,12 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+import createServer from './lib/infrastructure/webserver/server';
+
+async function start() {
+    const server = await createServer();
+
+    server.start();
+}
+
+start();
