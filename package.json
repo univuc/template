@@ -26,11 +26,15 @@
     "@hapi/hapi": "^19.1.1",
     "@hapi/inert": "^6.0.1",
     "@slack/web-api": "^5.8.0",
+    "axios-cookiejar-support": "^1.0.0",
     "crypto": "^1.0.1",
+    "env-arg": "0.0.3",
     "esm": "^3.2.25",
     "minimist": "latest",
     "redis": "^3.0.2",
+    "single-injector": "0.0.7",
     "stack-trace": "0.0.10",
+    "tough-cookie": "^4.0.0",
     "winston": "^3.2.1"
   },
   "devDependencies": {
